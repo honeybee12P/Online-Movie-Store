@@ -1,1 +1,1 @@
-On going project for Web Programming Language Course at UTD Spring 2018
+This is an online movie store project done as a part of Web Programming Language course at UTD Spring 2018
