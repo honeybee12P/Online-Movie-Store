@@ -1,0 +1,62 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Apr 01, 2018 at 05:17 AM
+-- Server version: 5.6.38
+-- PHP Version: 7.2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `OnlineMovieStore`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `MOVIE`
+--
+
+CREATE TABLE `MOVIE` (
+  `MOVIEID` int(11) NOT NULL,
+  `TITLE` varchar(255) NOT NULL,
+  `YEAR` int(5) NOT NULL,
+  `DESCRIPTION` text NOT NULL,
+  `DURATION` time NOT NULL,
+  `RATING` float NOT NULL,
+  `QUANTITY` varchar(100) NOT NULL,
+  `GENRE` varchar(100) NOT NULL,
+  `PRICE` float NOT NULL,
+  `INSTOCK` tinyint(1) NOT NULL,
+  `IMAGE` varchar(200) NOT NULL,
+  `TRAILER` varchar(2000) NOT NULL,
+  `IS_AVAILABLE` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `MOVIE`
+--
+
+INSERT INTO `MOVIE` (`MOVIEID`, `TITLE`, `YEAR`, `DESCRIPTION`, `DURATION`, `RATING`, `QUANTITY`, `GENRE`, `PRICE`, `INSTOCK`, `IMAGE`, `TRAILER`, `IS_AVAILABLE`) VALUES
+(1, 'Coco', 2017, 'Aspiring musician Miguel, confronted with his family ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.', '01:45:00', 8, '3', 'animation', 4, 0, 'coco1.jpg', 'http://www.hd-trailers.net/movie/coco/', 0),
+(2, 'The Incredibles', 2018, 'A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.', '01:55:00', 8, '2', 'animation', 2.99, 1, 'incredible.jpg', 'https://www.youtube.com/watch?v=sZwWCrFNfzQ', 1),
+(3, 'Black Panther', 2018, 'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of mistake of his father.', '02:14:00', 7.8, '1', 'action', 6.99, 0, 'black.jpg', 'http://www.hd-trailers.net/movie/black-panther/', 0),
+(4, 'Ready Player One', 2018, 'When the creator of a virtual reality world called the OASIS dies, he releases a video in which he challenges all OASIS users to find his Easter Egg, which will give the finder his fortune.', '02:20:00', 8, '2', 'action', 5.99, 0, 'ready.jpg', 'http://www.hd-trailers.net/movie/ready-player-one/', 0),
+(5, 'Wrinkle in Time', 2018, 'After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.', '01:49:00', 4.2, '1', 'sci-fi', 3.99, 0, 'wrinkle.jpeg', 'http://www.hd-trailers.net/movie/a-wrinkle-in-time/', 0),
+(6, 'Annihilation', 2018, 'A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature do not apply.', '02:00:00', 7.1, '3', 'thriller', 4.99, 0, 'annhilation.jpg', 'http://www.hd-trailers.net/movie/annihilation/', 0),
+(7, 'Isle of Dogs', 2018, 'Set in Japan, Isle of Dogs follows a boy odyssey in search of his lost dog.', '01:41:00', 8.3, '3', 'animation', 4, 0, 'isle.jpg', 'http://www.hd-trailers.net/movie/isle-of-dogs/', 0),
+(8, 'The Hangover', 2009, 'Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.', '01:45:00', 7.7, '4', 'comedy', 2.99, 0, 'hang.jpg', 'http://www.hd-trailers.net/movie/the-hangover/', 0),
+(9, 'Shaun of the Dead', 2004, 'A man decides to turn his moribund life around by winning back his ex-girlfriend, reconciling his relationship with his mother, and dealing with an entire community that has returned from the dead to eat the living.', '01:39:00', 8, '3', 'comedy', 2.99, 0, 'shaun.jpg', 'https://www.youtube.com/watch?v=LIfcaZ4pC-4', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `MOVIE`
+--
+ALTER TABLE `MOVIE`
+  ADD PRIMARY KEY (`MOVIEID`);

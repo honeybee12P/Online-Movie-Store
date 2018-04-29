@@ -1,0 +1,103 @@
+body{
+    height: 5000px;
+    background: red;
+    background: linear-gradient(to bottom right,#071021,#0f2242,#112344,#1b335e);
+
+} 
+.container{
+    color: white;
+}
+
+.cart_table {
+    border: 1px solid white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.cart_table tr th{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cart_table tr td{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+}
+.cart_table thead {
+    border: 1px solid white;
+    padding-bottom: 10px;
+}
+.cart_table input{
+    color: #1b335e;
+}
+#cart_head{
+    display: block;
+    color: white;
+}
+td:nth-child(1) {
+    width: 30%;
+}
+td:nth-child(3) {
+    width: 15%;
+}
+.badg{
+    position: absolute;
+    top:-3px;
+    left: 35px;
+}
+
+.navbar { 
+    height: 50px; 
+}
+
+.mySlides{
+    height: 500px;
+}
+
+
+.navbar .navbar-default .container-fluid{
+    background-color: #071021;
+    overflow: hidden;
+}
+
+
+td {
+    padding:0 3px 0 3px;
+
+}
+h4{
+    font-size: 22px;
+    font-weight: bold;
+    color:white;
+    margin-left: 20px;
+}
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top:50px;
+    color:white;
+}
+
+
+
+.button1{
+    background-color: Transparent;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 45px;
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: linear-gradient(to bottom right, #acb0b7, white);
+    text-align: center;
+}

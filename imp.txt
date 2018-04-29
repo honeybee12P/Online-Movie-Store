@@ -1,0 +1,31 @@
+important
+
+<div class ="navbar-header pull-right">
+				<p class = "navbar-text"> <?php echo "Hey ".$_SESSION["sess_USER_NAME"]. "!"?>
+				<a href="addMovie.php" target="_blank"  class="btn btn-default btn-sm"  style ="margin-left: 10px;"><span class="glyphicon glyphicon-plus"></span> Add Movie </a>
+				<button id = "myCart" type="button"  style=" margin-left: 20px; margin-right:20px;"> <i class="glyphicon glyphicon-shopping-cart gi-5x"></i></button>
+				<i class="glyphicon glyphicon-log-out navbar-link"></i></p>
+				<!-- <i class="glyphicon glyphicon-shopping-cart gi-5x" style="margin-top: 12px;margin-left: 300px;font-size: 20px;"></i>         
+				<i class="glyphicon glyphicon-log-out" style="margin-top: 12px;margin-left: 30px;font-size: 20px;"></i> -->
+			</div>  
+
+
+            <?php session_start();
+	$username = $_SESSION["sess_USER_NAME"];// This contains anshika
+	$_SESSION["USER_NAME"]= $_SESSION["sess_USER_NAME"];
+
+?>
+
+<script src ="js/my_cart_action.js"></script>
+
+
+
+info.php
+
+<script src="js/add_to_cart.js"></script>
+<script src ="js/my_cart_action.js"></script>
+
+
+search.php
+Hey wala line:
+<?php echo "Hey ".$_SESSION["sess_USER_NAME"]. "!"?>

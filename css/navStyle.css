@@ -1,0 +1,31 @@
+
+			.navbar { 
+				height: 50px; 
+			}
+
+			.navbar .navbar-default .container-fluid{
+			  background-color: #071021;
+			  overflow: hidden;
+			}
+			h4{
+		font-size: 22px;
+		font-weight: bold;
+		color:white;
+		margin-left: 20px;
+	}
+	h5 {
+		font-size: 20px;
+		font-weight: bold;
+		padding-top:50px;
+		color:white;
+	}
+	.footer {
+	  position: fixed;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: 1rem;
+	  background: linear-gradient(to bottom right, #acb0b7, white);
+	  text-align: center;
+	}
+			
